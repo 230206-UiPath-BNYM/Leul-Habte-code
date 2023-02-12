@@ -1,0 +1,21 @@
+workflow type: flowchart againest computer or another player
+
+* PVP
+* get the first player to input a mystery word
+* display dashes to show jpw long the word is 
+* begin ask for a single letter input
+* comparison with mystery word
+* Decision for if letter is there or not
+* display state of dashes
+*loop back
+* print out the mystery word andresult
+
+Variables 
+- mysteryword - storing the mystery word
+- chances - how many wrong guess are left
+- correctaguess - correctguesses by the user
+- wrongguesses - wrong guesses by the user
+
+ workflows
+- asking user input
+- printing word state
