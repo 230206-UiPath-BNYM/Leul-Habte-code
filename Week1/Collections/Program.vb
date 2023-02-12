@@ -9,12 +9,7 @@ Module Program
         ' Arrays are a homogenous collection of items stored in a contiguous memory space
         ' declare arrays by including () after the variable name
         dim fruits() as string = {"banana", "apple", "mango"}
-        dim fruits2(3) as String
-        ' arrays in vb are zero based
-        fruits2(0) = "kiwi"
-        fruits2(1) = "strawberry"
-        fruits2(2) = "pineapple"
-
+        dim fruits2() as String = {"kiwi", "strawberry", "pineaple"}
         ' enhanced for loop aka for each that is utilized to iterate over collections
         For Each fruit As String In fruits2
             Console.WriteLine(fruit)
@@ -55,8 +50,6 @@ Module Program
         'iterating over dictionary
         For Each grade As KeyValuePair(of String, Integer) In gradeBook
             Console.WriteLine("{0} got a grade of {1}", grade.Key, grade.Value)
-        Next
-        
-        
+        Next   
     End Sub
 End Module
