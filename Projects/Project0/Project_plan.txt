@@ -1,0 +1,44 @@
+  RoSA
+
+
+client_record - storing the client
+
+shoping_item_list - storing the list of items from shoping
+
+separate_record - separate_record from the vendor which are available
+
+rosa should take shoping_item_list and do comparison with separate_record and get the expense report
+
+expense_report should contain
+-Items not found
+-total ofthe shoping trip
+-where products were bought
+-calculated value for your service
+pay = 20 $ base fee + vendor tax(i.e getting their products from more than one vendor costs more)
+    - 1 vendor visited = 0
+    - 2+ vendors visited = (10 + 5* numbers of vendors visited)% of the shoping subtotal
+          - ex 2 vendors visited = 20% of the shoping subtotal
+          - 3 vendors visted = 25% of the shoping subtotal
+
+this report should be in a.xls file
+
+Spending
+- vendors - String
+- amount - double
+- date - date
+uipath offers 2 separate ways of accessing and manipulating workbooks
+- workbook or File Access Level
+      * workbook activities executed in the background
+      * doesn't require MS Excel to be installed 
+      * works only for .xls and .xlsx files
+Excel or Excel App Integrtion
+  * MS Excel needs to be installed
+  * words with .xls, .xlsx, .xlsx, .xlsm, .csv
+
+
+Excel Application Scope
+
+* A container and all the otghe Excel activities used to work with the specified EXcel file have to be placed inside the container. 
+When theexcution ends, the specified workbook and the Excel application are closed.
+
+* works with Excel App Integration activities.
