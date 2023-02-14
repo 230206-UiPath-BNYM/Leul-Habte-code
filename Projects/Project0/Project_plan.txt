@@ -42,3 +42,6 @@ Excel Application Scope
 When theexcution ends, the specified workbook and the Excel application are closed.
 
 * works with Excel App Integration activities.
+
+append range use to track the profit
+and write range is to use the 
